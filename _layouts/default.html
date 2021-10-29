@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    	<meta content="Jiqun Liu's group" name="description">
+		<!-- <link rel="icon" href="images/icons/"> -->
+		
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">												
+						<h1>
+							<!-- <logoicon><img alt="" src="images/icons/"></logoicon>	 -->	
+							<a href="index.html" id="logo"><strong>H</strong>uman-<strong>C</strong>omputer <strong>I</strong>nteraction and <strong>R</strong>ecommendation Group</a>
+						</h1>											
+					</div>					
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li {% if page.url == "/" %}class="current"{% endif %}><a href="/">About</a>
+							<ul>
+								<li><a href="/index.html#news">Lab News</a></li>
+								<li><a href="/all-updates.html#news">Archived Research Highlights</a></li>
+							</ul>
+							
+						</li>
+						<li {% if page.url == "/people.html" %}class="current"{% endif %}><a href="people.html">People</a></li>
+						<li {% if page.url == "/area.html" or page.url == "/projects.html" %}class="current"{% endif %}><a href="area.html">Research</a>
+							<ul>
+								<li><a href="area.html">Areas</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="links.html">Resources</a></li>
+								<li><a href="pub.html">Publications</a></li>
+							</ul>
+						</li>
+						<li {% if page.url == "/pub.html" %}class="current"{% endif %}><a href="/pub.html">Publications</a></li>
+					</ul>					
+				</nav>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div id="main" class="container">
+							<!-- Content -->
+							{{ content }}						
+					</div>					
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer" class="container">
+					<div class="row 200%">
+						<div class="12u">
+								<!-- Contact -->
+								<section>
+									<h2 class="major">Visit the Lab</h2>
+									<ul>
+										<li class="icon fa-home">
+											<span><a href="https://goo.gl/maps/F6E41JtRpvfUWTd79", target="_blank">Bizzell Library, Room 120</a>, University of Oklahoma</br>
+												401 West Brooks, Norman, OK 73019<span></li>										
+									</ul>
+								<!-- Copyright -->
+						<div id="copyright">
+							<ul class="menu">
+										<li>&copy; 2021 OUHCIR GROUP. All rights reserved.</li><li>Theme design powered by <a href="http://html5up.net", target="_blank">HTML5 UP</a> / <a href="https://creativecommons.org/licenses/by/3.0/", target="_blank">CC BY 3.0</a></li>
+							</ul>
+						</div>
+								</section>
+							
+						</div>
+					</div>					
+				</footer>
+			</div>
+
+		<!-- Scripts -->
+            <script src="https://kit.fontawesome.com/6352264dcb.js" crossorigin="anonymous"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+			
+	</html>
