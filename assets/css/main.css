@@ -205,6 +205,11 @@
 		height: 0;
 	}
 
+	.row.fixheight {
+		height:  300px;
+		text-align: center;
+	}
+
 	.row.uniform > * > :first-child {
 		margin-top: 0;
 	}
@@ -1316,6 +1321,12 @@
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
+		}
+
+		.image.rowele {
+			display: inline-block;
+			width: 100%;
+			vertical-align:middle;
 		}
 
 		.image.centered {
@@ -2688,6 +2699,13 @@
 				#footer > .row {
 					padding: 1em 0 1em 0;
 				}
+		/* Set the size of the div element that contains the map */
+			#map {
+			  height: 400px;
+			  /* The height is 400 pixels */
+			  width: 100%;
+			  /* The width is the width of the web page */
+            }
 
 		/* Copyright */
 
