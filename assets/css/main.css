@@ -1312,16 +1312,42 @@
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+
+		.image.rowed {
+			display: block;
+		    width: 100%;
+		    margin: 0 0 2em 0;
+
+		}
+		.image.medium {
+			display: block;
+			width: 75%;
+			margin: 0 0 2em 0;
+		}
+
 		.image.small {
 			display: block;
 			width: 50%;
 			margin: 0 0 2em 0;
 		}
 
+		.image.tiny {
+			display: block;
+			width: 10%;
+/*			margin: 0 0 2em 0;
+*/			margin-right: 0;
+		}
+
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
 		}
+
+		.image.right {
+			float: right;
+			margin: 0 2em 2em 0;
+		}
+
 
 		.image.rowele {
 			display: inline-block;
@@ -1588,10 +1614,43 @@
 				outline: 0;
 				font-size: 1.15em;
 				color: var(--font-color);
-				display: inline;		
-				
+				display: inline;				
 			}
 			
+	ul.prog {
+		font-size: 0.85em;
+		color: #a1aaa5;
+	}
+
+		ul.prog li {
+			position: relative;
+			display: inline-block;
+			margin-left: 1em;
+			margin-right: 5em;
+		}
+
+			ul.prog li a {
+				color: var(--my-href);
+				outline: 0;
+			}
+
+			ul.prog li:first-child {
+				margin-left: 0;
+			}
+
+			ul.prog li:before {
+				opacity: 0.5;
+				cursor: default;
+				margin-right: 0.5em;
+			}
+			
+			ul.prog li.desc {
+				color: inherit;
+				outline: 0;
+				font-size: 1.15em;
+				color: var(--font-color);
+				display: inline;				
+			}
 
 	ul.menu li {
 		border-left: solid 1px #E7EAE8;
